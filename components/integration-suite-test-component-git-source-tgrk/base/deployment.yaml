@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: integration-suite-test-component-git-source-tgrk
     spec:
       containers:
-      - image: quay.io/redhat-appstudio-qe/test-images:ef01b77d5ed44196a804d80aa4a84808
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:d4096c33b0c25ca21a0b5a4c1117d19f1dd86ea5c2dd8798aa348a11f3b3b0d0
         name: my-python
         ports:
         - containerPort: 8081
