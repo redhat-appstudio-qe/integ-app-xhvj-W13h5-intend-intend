@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: integration-suite-test-component-git-source-tgrk
+  namespace: integration-e2e-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:d4096c33b0c25ca21a0b5a4c1117d19f1dd86ea5c2dd8798aa348a11f3b3b0d0
+        name: my-python
+        resources: {}
+status: {}
